@@ -9,7 +9,7 @@ void ReportPriceChange(decimal oldPrice, decimal newPrice)
 {
   Console.WriteLine("Price changed from " + oldPrice + " to " + newPrice);
 }
-
+// Outra lteração realizada por Samuel António Miquirice Domingos (com outro nome de usuário)
 
 
 public delegate void PriceChangedHandler(decimal oldPrice, decimal newPrice);
