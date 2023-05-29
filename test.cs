@@ -10,7 +10,7 @@ void ReportPriceChange(decimal oldPrice, decimal newPrice)
   Console.WriteLine("Price changed from " + oldPrice + " to " + newPrice);
 }
 
-// Alteração realizada por Samuel António Miquirice Domingos
+// Alteração realizada por Samuel António Miquirice Domingos de novo
 
 public delegate void PriceChangedHandler(decimal oldPrice, decimal newPrice);
 
