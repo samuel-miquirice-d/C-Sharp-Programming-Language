@@ -1,4 +1,4 @@
-
+// Alteração realizada por Samuel António Miquirice Domingos
 namespace teste;
 var stock = new Stock("MSFT");
 stock.PriceChanged += ReportPriceChange;    // Define a função que será executada quando o evento ocorrer
@@ -10,7 +10,7 @@ void ReportPriceChange(decimal oldPrice, decimal newPrice)
   Console.WriteLine("Price changed from " + oldPrice + " to " + newPrice);
 }
 
-// Alteração realizada por Samuel António Miquirice Domingos de novo
+
 
 public delegate void PriceChangedHandler(decimal oldPrice, decimal newPrice);
 
@@ -18,7 +18,7 @@ public class Stock
 {
   string symbol;
   decimal price;
-  // Outra alteração realizada por Samuel António Miquirice Domingos
+
   public Stock(string symbol) { this.symbol = symbol; }
   
   public event PriceChangedHandler PriceChanged;        // Variável de evento
@@ -27,7 +27,7 @@ public class Stock
   {
     get { return price; }
     set
-    {
+    {  // Outra alteração realizada por Samuel António Miquirice Domingos
       if (price == value) return;      
       decimal oldPrice = price;
       price = value;
